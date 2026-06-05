@@ -4,8 +4,8 @@ class CcViewer < Formula
   desc "Vibe Coding toolkit for Claude Code with Web Viewer + Logger"
   homepage "https://github.com/weiesky/cc-viewer"
   # NOTE: url + sha256 自动由 .github/workflows/bump-homebrew.yml 维护，发版后会跨 repo PR 更新
-  url "https://registry.npmjs.org/cc-viewer/-/cc-viewer-1.6.296.tgz"
-  sha256 "3d56f8794af4d2f41f3ab648945a07e20e774b818d5bbccbda80ea81f7dd844e"
+  url "https://registry.npmjs.org/cc-viewer/-/cc-viewer-1.6.299.tgz"
+  sha256 "adc3c5d09bdcaadfdcbaa1faeed30ae0eb4781075fad5c1bd345726340a83c98"
   license "MIT"
 
   depends_on "node"
@@ -21,7 +21,7 @@ class CcViewer < Formula
     # 永远跑在安装时编译的 Node ABI 上。
     (bin/"ccv").write <<~SH
       #!/bin/sh
-      exec "#{Formula["node"].opt_bin}/node" \\
+      exec "#{Formula["node"].opt_bin}/node" \
         "#{libexec}/lib/node_modules/cc-viewer/cli.js" "$@"
     SH
     (bin/"ccv").chmod 0755
