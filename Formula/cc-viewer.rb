@@ -4,8 +4,8 @@ class CcViewer < Formula
   desc "Vibe Coding toolkit for Claude Code with Web Viewer + Logger"
   homepage "https://github.com/weiesky/cc-viewer"
   # NOTE: url + sha256 自动由 .github/workflows/bump-homebrew.yml 维护，发版后会跨 repo PR 更新
-  url "https://registry.npmjs.org/cc-viewer/-/cc-viewer-1.7.7.tgz"
-  sha256 "df4e4e939388f163f07f6b0d14c0dba8b904c7bfb0cbf3f95e0eb712d85363b7"
+  url "https://registry.npmjs.org/cc-viewer/-/cc-viewer-1.7.8.tgz"
+  sha256 "5d38be703c9f4536e3598ffa7ff5bc921dfe1a45409c845b006988d35ddf9179"
   license "MIT"
 
   depends_on "node"
